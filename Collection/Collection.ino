@@ -10,6 +10,7 @@ int in2Pin = 11;
 int in3Pin = 10;
 int in4Pin = 9;
 int beads = 0;
+int outSaltPin = 8;
 //int inPumpPin = 8; // This may be needed for the pump. Not sure...
 
 Stepper motor(200, in1Pin, in2Pin, in3Pin, in4Pin);
@@ -30,7 +31,6 @@ void setup()
  
 void loop()
 {
-  
   // read A0, the salinity probe voltage divider
   int salt = analogRead(A0);
   // print to serial
